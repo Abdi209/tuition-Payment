@@ -1,0 +1,228 @@
+/*@media (max-width: 510px) {
+  /* Reduce side margins for the main input and results panels to save space 
+  .user-input, 
+  .user-results {
+    margin-left: 15px;
+    margin-right: 15px;
+    column-gap: 10px;
+  }
+
+  /* Change the desktop grid into a vertical single-column layout 
+  .user-input {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+
+  .user-results {
+    grid-template-columns: 1fr;
+  }
+
+  /* Make the pop-up fit perfectly inside narrow screens 
+  .pop-up {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  /* Ensure individual list items or badges scale properly 
+  .stu {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+} */
+ /* smart phone */
+ @media (max-width: 580px){
+  .user-input{
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    justify-content: center;
+  }
+  .view{
+    display: block;
+  }
+  .user-results{
+
+    display: none;
+    grid-template-columns: 100px 80px 80px 60px;
+    column-gap: 1px;
+    row-gap: 18px;
+    margin-top: 35px;
+    padding-top: 10px;
+    padding-right: 340px;
+    margin-left: 6px;
+  }
+  .user-results button{
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 10px;
+  }
+  body{
+    min-height: 30vh;
+  }
+  .pop-up {
+        display: none;
+        background: rgb(233, 94, 29);
+        
+        
+        width: 319px;
+
+        
+        color: white;
+        box-shadow: 4px 4px 8px darkgray;
+        border-radius: 6px;
+        z-index: 1000;
+      }
+     
+     
+      .stu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+      }
+      .stu img{
+        width: 30px;
+
+      }
+      
+      .paid{
+        font-size: 16px;
+        font-weight: bold;
+      }
+  
+ }
+/* tablet */
+
+ @media (min-width: 581px) and (max-width: 780px){
+  * {
+    box-sizing: border-box;
+  }
+  .user-input {
+        display: grid;
+        grid-template-columns: 120px 120px 160px 90px 120px;
+        column-gap: 10px;
+        margin-bottom: 18px;
+        
+      }
+      .view{
+    display: none;
+  }
+      .user-results {
+        display: grid;
+        grid-template-columns: 120px 120px 160px 120px;
+        column-gap: 10px;
+        row-gap: 18px;
+      }
+      .user-input {
+        background: white;
+        padding: 12px 590px 12px 10px;
+        box-shadow: 4px 2px 8px lightgray;
+        margin-left: 30px;
+        margin-right: 40px;
+        border-radius: 20px;   
+      }
+      .user-results{
+        background: white;
+        padding: 20px 12px;
+        box-shadow: 4px 2px 8px lightgray;
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 12px;
+        column-gap: 120px;
+      }
+      .user-input button, .user-results button{
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+      }
+      .user-results button {
+        background: darkcyan;
+        padding: 10px 20px;
+      }
+      .add{
+        background: rgb(240, 97, 81);
+        padding: 0px;
+      }
+      .total{
+        background: rgb(240, 97, 81);
+        padding: 0px;
+      }
+      .view{
+        display: none;
+        background: rgb(240, 97, 81);
+        padding: 8px;
+      }
+      .cs-name,
+      .cs-money,
+      .cs-members {
+        font-size: 14px;
+        padding: 3px;
+        border-radius: 6px;
+      }
+      .pop-up {
+        display: none;
+        background: rgb(233, 29, 29);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        
+        width: 400px;
+
+        
+        color: white;
+        box-shadow: 4px 4px 8px darkgray;
+        border-radius: 6px;
+        z-index: 1000;
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      }
+      .data-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:  rgba(26, 24, 24, 0.2);
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 4px 12px;
+        
+        
+      }
+      .stu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+      }
+      .stu img{
+        width: 40px;
+
+      }
+      .badge{
+        font-size: 16px;
+        font-weight: 900;
+        background: rgb(51, 51, 202);
+        padding: 10px;
+        border-radius: 50%;
+      }
+      .paid{
+        font-size: 18px;
+        font-weight: bold;
+      }
+  
+ }

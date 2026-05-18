@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuition Payment</title>
+    <!--browser tab icon-->
+    <link rel="icon" type="image/png" href="salary.png">
+    <link rel="stylesheet" href="pyt.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <h2>Tuition Payment</h2>
+    <div class="user-input">
+      <input placeholder="Family Name" class="name cs-name" />
+      <input placeholder="How much" class="money cs-money" />
+      <input placeholder="How many members" class="members cs-members" />
+      <button onclick="addStudent()" class="add">Add</button>
+      <button onclick="totalEarning()" class="total">Total Earning</button>
+      <button onclick='viewMobile()'class="view js-view">View</button>
+    </div>
+    <button onclick="backHome()" class="x-btn js-x-btn">x</button>
+    
+    <div class="user-results "></div>
+    <div class="overlay js-overlay"></div>
+
+    <div class="pop-up js-pop-up">
+      <h3>Total Earning</h3>
+      <div class="flex-container">
+        <div class="data-row">
+          <div class="stu">
+            <img src="students.png" />
+            <span>Students</span>
+          </div>
+          <p class="badge">7</p>
+        </div>
+        <div class="data-row">
+          <div class="stu">
+            <img src="wallet.png" />
+            <span>Total Payment</span>
+          </div>
+          <p class="paid">Ksh 1222</p>
+        </div>
+        <button  onclick="closed()" class="close-btn">Close</button>
+      </div>
+    </div>
+
+    <script src="pyt.js"></script>
+  </body>
+</html>
