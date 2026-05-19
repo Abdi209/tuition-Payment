@@ -124,8 +124,11 @@ function closed(){
 }
 function viewMobile () {
   // only activate if the media is 580 px otherwise don't activate
-  const viewButton = document.querySelector('.js-view')
-  const check = viewButton.style.display = 'block'
+ // const viewButton = document.querySelector('.js-view')
+ // const check = viewButton.style.display = 'block'
+    document.querySelector('.user-input').style.display = 'none';
+    document.querySelector('.js-x-btn').style.display = 'block';
+    document.querySelector('.user-results').style.display = 'grid';
  
   
   
